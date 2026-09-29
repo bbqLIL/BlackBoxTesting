@@ -5,9 +5,9 @@ labels: ["bug"]
 
 body:
   - type: markdown
-      attributes:
-        value: |
-          ##Шаблон для оформления сообщения об ошибке
+    attributes:
+      value: |
+        ##Шаблон для оформления сообщения об ошибке
 
   - type: checkboxes
     id: agree
@@ -28,72 +28,72 @@ body:
       required: true 
 
   - type: textarea
-  id: prerequisites
-  attributes:
-    label: Предусловия
-    description: Что нужно сделать перед тем как начать тестирование?
-    placeholder: Например: пользователь авторизован.
-  validations:
-    required: false 
+    id: prerequisites
+    attributes:
+      label: Предусловия
+      description: Что нужно сделать перед тем как начать тестирование?
+      placeholder: Например: пользователь авторизован.
+    validations:
+      required: false 
 
  - type: textarea
-  id: steps
-  attributes:
-    label: Шаги воспроизведения
-    description: Что нужно сделать, чтобы повторить ошибку?
-    placeholder: Например: перейти на страницу ..., нажать кнопку ... и т.д.
-  validations:
-    required: true 
+   id: steps
+   attributes:
+     label: Шаги воспроизведения
+     description: Что нужно сделать, чтобы повторить ошибку?
+     placeholder: Например: перейти на страницу ..., нажать кнопку ... и т.д.
+   validations:
+     required: true 
 
  - type: textarea
-  id: expected_result
-  attributes:
-    label: Ожидаемый результат
-    description: Что нужно ожидать?
-    placeholder: Например: система должна выполнить ожидаемое действие.
-  validations:
-    required: true 
+   id: expected_result
+   attributes:
+     label: Ожидаемый результат
+     description: Что нужно ожидать?
+     placeholder: Например: система должна выполнить ожидаемое действие.
+   validations:
+     required: true 
 
-   - type: textarea
-  id: fact_result
-  attributes:
-    label: Фактический результат
-    description: Что нужно получили?
-    placeholder: Например: система повела себя неккоректно.
-  validations:
-    required: true 
+ - type: textarea
+   id: fact_result
+   attributes:
+     label: Фактический результат
+     description: Что нужно получили?
+     placeholder: Например: система повела себя неккоректно.
+   validations:
+     required: true 
     
-   - type: textarea
-  id: screenshots
-  attributes:
-    label: Скриншоты / Доп. материалы
-    description: Приложите скриншоты или другие дополнительные материалы.
-    placeholder: Перетащите файлы сюда или прикрепите ссылки.
-  validations:
-    required: false 
+ - type: textarea
+   id: screenshots
+   attributes:
+     label: Скриншоты / Доп. материалы
+     description: Приложите скриншоты или другие дополнительные материалы.
+     placeholder: Перетащите файлы сюда или прикрепите ссылки.
+   validations:
+     required: false 
 
-  - type: dropdown
-      id: priority
-      attributes:
-        label: Приоритет
-        description: Насколько важно исправить ошибку?
-        options:
-         - Низкий
-         - Средний
-         - Высокий
-         - Критический
-      validations:
-        required: true 
+ - type: dropdown
+   id: priority
+   attributes:
+     label: Приоритет
+     description: Насколько важно исправить ошибку?
+     options:
+       - Низкий
+       - Средний
+       - Высокий
+       - Критический
+   validations:
+     required: true 
 
-  - type: dropdown
-      id: severity
-      attributes:
-        label: Серьезность
-        description: Насколько сильно ошибка влияет на систему?
-        options:
-         - Незначительная
-         - Средняя
-         - Значительная
-         - Критическая
-      validations:
-        required: true 
+ - type: dropdown
+   id: severity
+   attributes:
+     label: Серьезность
+     description: Насколько сильно ошибка влияет на систему?
+     options:
+       - Незначительная
+       - Средняя
+       - Значительная
+       - Критическая
+   validations:
+     required: true 
